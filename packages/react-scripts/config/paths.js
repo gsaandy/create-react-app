@@ -77,6 +77,7 @@ module.exports = {
   appWebpackCache: resolveApp('node_modules/.cache'),
   appTsBuildInfoFile: resolveApp('node_modules/.cache/tsconfig.tsbuildinfo'),
   swSrc: resolveModule(resolveApp, 'src/service-worker'),
+  moduleFederationConfig: resolveApp('module-federation.config.js'),
   publicUrlOrPath,
 };
 
@@ -102,6 +103,7 @@ module.exports = {
   appWebpackCache: resolveApp('node_modules/.cache'),
   appTsBuildInfoFile: resolveApp('node_modules/.cache/tsconfig.tsbuildinfo'),
   swSrc: resolveModule(resolveApp, 'src/service-worker'),
+  moduleFederationConfig: resolveApp('module-federation.config.js'),
   publicUrlOrPath,
   // These properties only exist before ejecting:
   ownPath: resolveOwn('.'),
@@ -140,6 +142,7 @@ if (
     appWebpackCache: resolveOwn('node_modules/.cache'),
     appTsBuildInfoFile: resolveOwn('node_modules/.cache/tsconfig.tsbuildinfo'),
     swSrc: resolveModule(resolveOwn, `${templatePath}/src/service-worker`),
+    moduleFederationConfig: resolveApp('module-federation.config.js'),
     publicUrlOrPath,
     // These properties only exist before ejecting:
     ownPath: resolveOwn('.'),
